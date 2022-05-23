@@ -1,12 +1,36 @@
 /* Import website font */
 @import url('https://stockfont.org/?6c9104ed5c89e7a4966839d8d30af7dba1aa2b1f891952b5e9e0fdea697a8b81');
 
-body {background-image: url(images/bg.png); margin: 0; padding: 0; font-family: 'Oxygen-Regular', sans-serif; overflow: hidden;}
+body {
+	background-image: url(images/bg.png); 
+	margin: 0; 
+	padding: 0; 
+	font-family: 'Oxygen-Regular', sans-serif; 
+	overflow: hidden;
+}
 
 
-.sky {position: absolute;width: 100vw;height: 70vh;left: 0;top: 0;background-image: url("images/nightSky.png");background-color: #000;}
+.sky {
+	position: absolute;
+	width: 100vw;
+	height: 70vh;
+	left: 0;
+	top: 0;
+	background-image: url("images/nightSky.png");
+	background-color: #000;
+}
 
-aside {width: 200px; position: fixed; height: 100vh; left: 100%; margin-left: -240px; background-color: #ddd; border-left: 5px solid #bbb; padding: 20px;}
+aside {
+	width: 200px; 
+	position: fixed; 
+	height: 100vh; 
+	left: 100%; 
+	margin-left: -240px; 
+	background-color: #ddd; 
+	border-left: 5px solid #bbb; 
+	padding: 20px;
+}
+
 #closeside {float: right; font-weight: bold; cursor: pointer;}
 
 .character {position: absolute; top: 88vh; left: 200px; display: block;}
