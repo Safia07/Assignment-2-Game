@@ -85,6 +85,7 @@ function move() {
 
 
 function keydown(event) {
+	console.log('key down');
 	if (event.keyCode == 37) {
 		leftPressed = true;
 	}
@@ -99,11 +100,48 @@ function keydown(event) {
 	}
 }
 
+// spaceship location code
+
+function spaceShip() { 
+	console.log('space ships sky');
+	var element = document.getElementsByClassName('alien');
+	var number = 5;
+
+	for (var i = 0; i < number; i++) {
+		console.log('loop', number);
+
+		var x = Math.ceil(Math.random()*1000);
+
+		var ship = document.getElementById('alien');
+		ship.style.position = 'absolute';
+		ship.style.top = 0;
+		ship.style.left = x + 'px';
+		document.body. appendChild(ship);
+	}
+}
+
+
+
+function clickStart() {
+	console.log('start button');
+	// document.getElementById('startButton').style.display = 'none'; this was the og correct code
+	var element = document.getElementsByClassName('start')[0];
+	element.style.display = 'none';
+	
+	spaceShip();
+}
+
 
 function myLoadFunction() {
 	timeout = setInterval(move, 10);
 	document.addEventListener('keydown', keydown);
 	document.addEventListener('keyup', keyup);
+
+	var element = document.getElementsByClassName('start')[0];
+	element.addEventListener('click', clickStart);
+
+	// startButton.addEventListener('click', clickStart);  this was the og correct code
+	// document.getElementById('startButton').style.display = 'none';
 }
 
 
