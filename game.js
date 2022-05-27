@@ -108,7 +108,8 @@ function spaceShip() {
 	var number = 5;
 
 	for (var i = 0; i < number; i++) {
-		console.log('loop', number);
+		// console.log('loop', number);
+		console.log('loop', i);
 
 		var x = Math.ceil(Math.random()*1000);
 
