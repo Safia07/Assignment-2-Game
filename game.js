@@ -102,23 +102,48 @@ function keydown(event) {
 
 // spaceship location code
 
-function spaceShip() { 
-	console.log('space ships sky');
-	var element = document.getElementsByClassName('alien');
-	var number = 5;
+// function spaceShip() { 
+// 	console.log('space ships sky');
+// 	var element = document.getElementsByClassName('alien');
+// 	var number = 5;
 
-	for (var i = 0; i < number; i++) {
-		// console.log('loop', number);
-		console.log('loop', i);
+// 	for (var i = 0; i < number; i++) {
+// 		// console.log('loop', number);
+// 		console.log('loop', i);
 
-		var x = Math.ceil(Math.random()*1000);
+// 		var x = Math.ceil(Math.random()*1000);
 
-		var ship = document.getElementById('alien');
-		ship.style.position = 'absolute';
-		ship.style.top = 0;
-		ship.style.left = x + 'px';
-		document.body. appendChild(ship);
-	}
+// 		// var ship = document.getElementById('alien'); og code
+// 		// var ship = document.createElement('alien');
+// 		// var ship = document.classList.add('alien');
+// 		ship.style.position = 'absolute';
+// 		ship.style.top = 0;
+// 		ship.style.left = x + 'px';
+// 		document.body. appendChild(ship);
+// 	}
+// }
+
+// don't forget to delete this makeSomething function 
+function makeSomething() {
+    console.log('make something');
+    var number = 5;
+
+    for (var i = 0; i < number; i++) {
+        console.log('loop something', number);
+
+        var x = Math.ceil(Math.random()*1000);
+
+        var test = document.createElement('div');
+        test.style.position = 'absolute';
+        test.style.top = 0;
+        test.style.backgroundColor = 'red';
+        test.style.borderRadius = '100%';
+        test.style.width = 100 + 'px';
+        test.style.height = 100 + 'px';
+        test.style.left = x + 'px';
+		test.classList.add('spaceship');
+        document.body. appendChild(test);
+    }
 }
 
 
@@ -129,7 +154,8 @@ function clickStart() {
 	var element = document.getElementsByClassName('start')[0];
 	element.style.display = 'none';
 	
-	spaceShip();
+	// spaceShip();
+	makeSomething();
 }
 
 
