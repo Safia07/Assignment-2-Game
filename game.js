@@ -133,8 +133,8 @@ function spaceShip() {
 		ship.style.position = 'absolute';
 		ship.style.top = 0;
 		ship.style.left = x + 'px';
-		document.body.appendChild(ship)[i];
-	}
+		// document.body.appendChild(ship)[i];
+		}
 
 	// fallingBomb();
 

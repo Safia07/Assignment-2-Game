@@ -857,9 +857,36 @@ aside ul {list-style-type: none; margin-left: 0; padding-left: 0; margin-bottom:
 }
 
 
-.hud {position: fixed; width: 100%; z-index: 1000;}
-ul {list-style-type: none;float: right; margin-right: 20px;}
-.health li {width: 40px; height: 48px; background-image: url(images/state.png); float:right; margin-left: 8px;}
+.hud {
+	position: fixed; 
+	width: 100%; 
+	z-index: 1000;
+}
+
+ul {
+	list-style-type: none;
+	float: right; 
+	margin-right: 20px;
+}
+
+.health li {
+	width: 40px; 
+	height: 48px; 
+	background-image: url(images/state.png); 
+	float:right; 
+	margin-left: 8px;
+}
+
+.clone li {
+	background-image: url(images/alien.png); 
+	position: relative; 
+	height: 93.8px; 
+	width: 86px; 
+	background-size: contain; 
+	top: 15vh; 
+	left: 45%;
+	float: right;
+}
 
 
 .tile {
