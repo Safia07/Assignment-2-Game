@@ -60,7 +60,7 @@ aside ul {list-style-type: none; margin-left: 0; padding-left: 0; margin-bottom:
 #opponent .body {background-image: url(images/body1.png);}
 #opponent .head {background-image: url(images/head1.png);}
 
-#ufo {
+#ship {
 	background-image: url(images/alien.png); 
 	position: absolute; 
 	height: 93.8px; 
@@ -459,14 +459,18 @@ aside ul {list-style-type: none; margin-left: 0; padding-left: 0; margin-bottom:
 }
 
 
-.bomb {
+/* .bomb {
 	background-image: url(images/sprites.png);
 	width: 31px;
 	height: 10px;
 	position: absolute;
 	background-position: -96px -401px;
 	transform: rotate(90deg)
-}
+} */
+
+/* .move {
+	transform: translateY(120vh);
+} */
 
 .start:before {
 	background-image: url(images/head3.png);
@@ -504,16 +508,37 @@ aside ul {list-style-type: none; margin-left: 0; padding-left: 0; margin-bottom:
 }
 
 .end {
+
 	background-image: url(images/head3.png);
 	background-repeat: no-repeat;
-	background-position: 0px -64px;
+	background-position: 0px -525px;
 	width: 32px;
 	height: 32px;
 	content: " ";
-	display: block;
+	display: none;
 	position: absolute;
 	margin-top: 0.4em;
 	margin-left: 0.4em;
+
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+	position: absolute;
+	font-size: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20vw;
+	height: 6vh;
+	background-color: #ccc;
+	z-index: 1000;
+	text-align: center;
+	left: 50%;
+	margin-left: -10vw;
+	top: 50%;
+	margin-top: -1em;
+	font-family: 'Anton';
+	cursor: pointer;
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px #000;
 }
 
 .explosion {

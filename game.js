@@ -100,52 +100,45 @@ function keydown(event) {
 	}
 }
 
-// spaceship location code
 
-// function spaceShip() { 
-// 	console.log('space ships sky');
-// 	var element = document.getElementsByClassName('alien');
-// 	var number = 5;
+// bombs ahoy, creating the bombs 
 
-// 	for (var i = 0; i < number; i++) {
-// 		// console.log('loop', number);
-// 		console.log('loop', i);
+// function fallingBomb() {
+// 	console.log('bombs ahoy');
 
-// 		var x = Math.ceil(Math.random()*1000);
+// 	var element = document.getElementsByClassName('bomb')[0];
+// 	element.style.display = 'none';
 
-// 		// var ship = document.getElementById('alien'); og code
-// 		// var ship = document.createElement('alien');
-// 		// var ship = document.classList.add('alien');
-// 		ship.style.position = 'absolute';
-// 		ship.style.top = 0;
-// 		ship.style.left = x + 'px';
-// 		document.body. appendChild(ship);
-// 	}
+// 	var element = document.getAnimations('bombV');
+	   
 // }
 
-// don't forget to delete this makeSomething function 
-function makeSomething() {
-    console.log('make something');
-    var number = 5;
 
-    for (var i = 0; i < number; i++) {
-        console.log('loop something', number);
+// spaceship location code
 
-        var x = Math.ceil(Math.random()*1000);
+function spaceShip() { 
+	console.log('space ships sky');
+	var ship = document.getElementsByClassName('ship');
+	var number = 5;
 
-        var test = document.createElement('div');
-        test.style.position = 'absolute';
-        test.style.top = 0;
-        test.style.backgroundColor = 'red';
-        test.style.borderRadius = '100%';
-        test.style.width = 100 + 'px';
-        test.style.height = 100 + 'px';
-        test.style.left = x + 'px';
-		test.classList.add('spaceship');
-        document.body. appendChild(test);
-    }
+	for (var i = 0; i < number; i++) {
+		// console.log('loop', number);
+		console.log('loop', i);
+
+		var x = Math.ceil(Math.random()*1000);
+
+		// var ship = document.getElementById('alien'); og code
+		var ship = document.getElementById('ship');		
+		// document.body.classList.add('spaceship');
+		ship.style.position = 'absolute';
+		ship.style.top = 0;
+		ship.style.left = x + 'px';
+		document.body.appendChild(ship)[i];
+	}
+
+	// fallingBomb();
+
 }
-
 
 
 function clickStart() {
@@ -154,8 +147,7 @@ function clickStart() {
 	var element = document.getElementsByClassName('start')[0];
 	element.style.display = 'none';
 	
-	// spaceShip();
-	makeSomething();
+	spaceShip();
 }
 
 
